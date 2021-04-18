@@ -1,4 +1,4 @@
-## Realtime Chat App
+## Real Time Chat-App (Laravel,Vue,Pusher)
 
 Technologies used:
 - Laravel (Backend PHP Framework)
