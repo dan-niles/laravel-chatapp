@@ -1,0 +1,23 @@
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+composer require laravel/jetstream
+php artisan jetstream:install inertia
+php artisan migrate
+npm install
+php artisan vendor:publish --tag=jetstream-views
+php artisan make:model ChatRoom -m
+php artisan make:model ChatMessage -m
+php artisan migrate
+php artisan make:seeder ChatRoomSeeder
+php artisan db:seed
+composer require pusher/pusher-php-server "~4.0"
+npm install --save laravel-echo pusher-js
+php artisan event:generate
+
+
+
+Laravel (Backend PHP Framework)
+Laravel Sanctum (Authentication Package)
+Jetstream Inertia (Front/Back end user authentication scaffolding)
+Vue.js (Frontend Javascript Framework)
+Pusher (Real-time web-socket connects)
